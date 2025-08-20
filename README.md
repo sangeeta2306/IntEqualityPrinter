@@ -1,18 +1,21 @@
-## Getting Started
+## Crafting An Equality Printer To Explore Multiple Conditional Checks In Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Write a method printEqual with 3 parameters of type int. The method should not return anything (void).
 
-## Folder Structure
+If one of the parameters is less than 0, print text "Invalid Value".
 
-The workspace contains two folders by default, where:
+If all numbers are equal print text "All numbers are equal"
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+If all numbers are different print text "All numbers are different".
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Otherwise, print "Neither all are equal or different".
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
 
-## Dependency Management
+## EXAMPLES OF INPUT/OUTPUT: 
+- printEqual(1, 1, 1); should print text All numbers are equal
+- printEqual(1, 1, 2); should print text Neither all are equal or different
+- printEqual(-1, -1, -1); should print text Invalid Value
+- printEqual(1, 2, 3); should print text All numbers are different
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
+
